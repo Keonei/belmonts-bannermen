@@ -163,11 +163,18 @@ a {
   }
 }
 
-header {
+#header {
   background: #191818;
   justify-content: space-between;
   max-width: 100vw;
   margin: 0 auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .col-1-header {
@@ -220,7 +227,7 @@ header {
   background: #333;
 }
 
-.navbar li:focus-within {
+.navbar-nav li:focus-within {
   display: block;
   background: #7f63a1;
   color: #fff;
