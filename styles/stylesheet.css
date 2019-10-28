@@ -12,6 +12,7 @@ html {
 
 ul, li {
 	list-style: none;
+  margin: auto 0;
 }
 
 img {
@@ -162,38 +163,64 @@ a {
   }
 }
 
-.header-wrapper {
-  background-color: #191818;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+header {
+  background: #191818;
+  justify-content: space-between;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.col-1-header {
+  flex: 1 1 auto;
+  width: 50%;
+}
+
+.social {
+  display: flex;
+  flex-flow: row wrap;
+  height: 3.6em;
+  padding-left: 1rem;
+}
+
+.social ul {
+  display: flex;
+}
+
+.social li {
+  float: left;
+  padding: .925em 1em;
+}
+
+.social li:hover {
+  background: #333;
+}
+
+.social li a {
+  color: #999;
 }
 
 .navbar {
-  position: relative;
-  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   height: 3.6em;
-  padding: 0;
+  padding-right: 3rem;
 }
 
-.navbar .navbar-nav {
-  float: right;
-  margin: 0 2% 0 0;
+.navbar ul {
+  display: flex;
 }
 
-.navbar-nav li {
+.navbar  li {
   float: left;
   padding: .925em .5em;
 }
 
-.navbar-nav li:hover {
+.navbar li:hover {
   background: #333;
 }
 
-
-.navbar-nav li:focus-within {
+.navbar li:focus-within {
   display: block;
   background: #7f63a1;
   color: #fff;
@@ -204,7 +231,7 @@ a {
   -moz-transition: .5s;
 }
 
-.navbar-nav li a {
+.navbar li a {
   color: #999;
   font-family: 'Covered By Your Grace', cursive;
   text-decoration: none;
@@ -217,6 +244,22 @@ a {
 .active {
   background: #7f63a1;
   color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+  }
+}
+
+@media all and (max-width: 780px) {
+
 }
 
 .banner-wrapper::before {
@@ -249,46 +292,38 @@ a {
   margin-right: 0;
 }
 
-.banner {
-  max-width: 600px;
+.banner-title {
+  position: absolute;
+  top: 55%;
+  left: 22%;
+  background-color: #7f63a19e;
+  width: 948px;
+  height: 50%;
+}
+
+.title-wrapper {
+  position: relative;
+  top: 21%;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
 }
 
 .banner h1 {
-  margin: 0 auto;
-  color: #f1f1f1;
-  text-align: center;
-  font-size: 3.75em;
+  font-size: 5em;
   font-family: 'UnifrakturMaguntia', cursive;
-  letter-spacing: 1.5px;
-  position: absolute;
-  top: 30%;
-  left: 18%;
-  transform: translate(-30%, -18%);
-  filter: blur(0px);
-  -moz-filter: blur(0px);
-  -webkit-filter: blur(0px);
-  -o-filter: blur(0px);
+  letter-spacing: 3px;
 }
 
-.banner h1 img {
-  margin: 0 auto;
-  padding: 10px 0;
-  max-width: 460px;
-  min-width: 30%;
+.banner h2 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .section-header {
   margin: 0 auto;
-}
-
-.section-header h1 {
-  font-family: 'Covered By Your Grace', cursive;
-  text-align: center;
-  font-size: 2em;
-  color: #7f63a1;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 25px;
 }
 
 .section-copy {
