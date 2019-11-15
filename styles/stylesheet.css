@@ -269,14 +269,18 @@ a {
 
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
 .banner-wrapper::before {
   content: '';
-  position: absolute;
   background: inherit;
-  width: 100%;
-  height: 440px;
-  margin-left: 0;
-  margin-right: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   filter: blur(3px);
   -moz-filter: blur(3px);
   -webkit-filter: blur(3px);
@@ -284,7 +288,6 @@ a {
 }
 
 .banner-wrapper {
-  position: relative;
   background: linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('/images/dracula-curse-screenshot.png') no-repeat;
   background: -webkit-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('/images/dracula-curse-screenshot.png') no-repeat;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(rgba(16, 16, 16, .52)), color-stop(rgba(255, 255, 255, 1))), url('/images/dracula-curse-screenshot.png') no-repeat;
@@ -295,25 +298,28 @@ a {
   background-color: #000;
   width: 100%;
   height: 440px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .banner-title {
-  position: absolute;
-  top: 55%;
-  left: 22%;
   background-color: #7f63a19e;
-  width: 948px;
-  height: 50%;
+  width: max-content;
+  padding: 3rem 6rem;
+  margin: 0 auto;
 }
 
 .title-wrapper {
-  position: relative;
-  top: 21%;
   margin: 0 auto;
   color: #333;
   text-align: center;
+}
+
+.banner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(105%);
 }
 
 .banner h1 {
