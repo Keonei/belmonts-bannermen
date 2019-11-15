@@ -288,12 +288,12 @@ a {
 }
 
 .banner-wrapper {
-  background: linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('/images/dracula-curse-screenshot.png') no-repeat;
-  background: -webkit-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('/images/dracula-curse-screenshot.png') no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(rgba(16, 16, 16, .52)), color-stop(rgba(255, 255, 255, 1))), url('/images/dracula-curse-screenshot.png') no-repeat;
-  background: -moz-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('/images/dracula-curse-screenshot.png') no-repeat;
-  background: -o-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('/images/dracula-curse-screenshot.png') no-repeat;
-  background: -ms-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('/images/dracula-curse-screenshot.png') no-repeat;
+  background: linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('../dracula-curse-screenshot.png') no-repeat;
+  background: -webkit-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('../dracula-curse-screenshot.png') no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(rgba(16, 16, 16, .52)), color-stop(rgba(255, 255, 255, 1))), url('../dracula-curse-screenshot.png') no-repeat;
+  background: -moz-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('../dracula-curse-screenshot.png') no-repeat;
+  background: -o-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('..dracula-curse-screenshot.png') no-repeat;
+  background: -ms-linear-gradient(to bottom, rgba(16,16,16,.52), rgba(255,255,255,1)), url('..dracula-curse-screenshot.png') no-repeat;
   background-size: cover;
   background-color: #000;
   width: 100%;
