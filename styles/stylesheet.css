@@ -343,13 +343,13 @@ a {
   margin-top: 50px;
 }
 
-.section-copy .content-brow {
+.section-copy h3 {
   font-size: 1.50em;
   font-weight: 700;
   color: #777777;
   letter-spacing: 1.2px;
   text-align: justify;
-  margin: 0 0 50px;
+  margin: 25px 0 50px;
 }
 
 .section-copy .content-body {
@@ -362,4 +362,9 @@ a {
 
 .content-body p {
   margin: 0 0 20px;
+}
+
+.blog {
+  border-top: solid #777777 2px;
+  border-bottom: solid #777777 2px;
 }
