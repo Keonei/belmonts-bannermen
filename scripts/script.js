@@ -19,18 +19,8 @@ $(function() {
     target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
     if (target.length) {
       $('html,body').animate({
-        scrollTop: target.offset().top -60
+        scrollTop: target.offset().top -100
       }, 1000);
     }
   });
 });
-
-
-function myFunction() {
-  var x = document.getElementById("navbar");
-  if (x.className === "navbar-nav") {
-    x.className += "responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
