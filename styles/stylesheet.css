@@ -161,13 +161,6 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 550px) {
-
-}
-
-@media screen and (min-width: 600px) {
-
-}
 
 @media all and (max-width: 780px) {
   .navbar ul {
@@ -227,6 +220,15 @@ a {
   margin-left: auto;
   margin-right: auto;
   border-bottom: solid #777 .3em;
+}
+
+@media all and (max-width: 1000px) {
+  .banner-wrapper {
+    height: 100%;
+  }
+  .banner {
+    transform: none !important;
+  }
 }
 
 @media all and (max-width: 780px) {
@@ -358,11 +360,11 @@ div[role=page] main .about {
 }
 
 div[role=page] main .news {
+  display: flex;
   color: #777777;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
-  overflow: hidden;
 }
 
 article h3 {
@@ -376,15 +378,19 @@ article h3 {
 .news article {
   width: 66.66667%;
   background-color: #ffffff;
-  float: left;
   padding: 2em;
   -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.1);
   box-shadow: 0 3px 10px rgba(0,0,0,.1);
 }
 
+.blog {
+  flex: 1;
+}
+
 .content {
   font-size: 1.125em;
   text-align: justify;
+  flex: 1;
 }
 
 .content p {
@@ -393,21 +399,23 @@ article h3 {
 
 aside {
   width: 33.3333%;
-  float: left;
-  padding: 0 1rem;
+  padding-left: 1.5rem;
 }
 
 div.sidebar {
   background-color: #ffffff;
   padding: 1.25rem;
-  margin: 0 auto;
   border-radius: 3px;
   -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.1);
   box-shadow: 0 3px 10px rgba(0,0,0,.1);
   border: 2px solid #7f63a1;
 }
 
-@media all and (max-width: 780px) {
+div.sidebar:nth-child(2n+1) {
+  margin: 0 auto 2em auto;
+}
+
+@media all and (max-width: 875px) {
   aside {
     display: none;
   }
@@ -416,17 +424,37 @@ div.sidebar {
   }
 }
 
-.spacer {
-  height: 2rem;
+.twitch-embed iframe {
+  width: 100%;
 }
+
+@media all and (max-width: 1050px) {
+  div.sidebar:nth-child(2n+2) {
+    display: none;
+  }
+}
+
 
 .flexgrid {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .flexgrid .child {
-  width: 240px;
+  width: 24%;
+}
+
+@media all and (max-width: 450px) {
+  .flexgrid .child {
+    width: 100% !important;
+  }
+}
+
+@media all and (max-width: 875px) {
+  .flexgrid .child {
+    width: 48%;
+  }
 }
 
 .bio {
@@ -438,7 +466,6 @@ div[role=page] main .team {
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
-  overflow: hidden;
 }
 
 .team h3 {
